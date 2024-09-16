@@ -3,7 +3,7 @@ We are investigating an intrusion involving a workstation owned by Bill Lumbergh
 
 Recently, Bill was looking for free resources for testing his skills in web app penetration testing and used Reddit to try to find a cracked version of a popular software called Burpsuite Pro. Unfortunately, an unsavory Redditor may have sent Bill some malware.
 
-We have acquired key forensic artifacts from Bill’s system to better understand what happened once he ran the malware. This lab focuses exclusively on the Prefetch files obtained from Bill’s system. You might be surprised at just how much this one artifact will reveal about this attack.
+We have acquired key forensic artifacts from Bill’s system to better understand what happened once he ran the malware. This lab focuses exclusively on the Prefetch files obtained from Bill’s system. 
 
 # Lab Setup
 
@@ -59,9 +59,9 @@ The tool processes the Prefetch files and saves the results in a CSV format for 
   ```powershell
   2024-03-12 at 18:36🕚
   ```
+5. Clear the search term of Burpsuite, and now lets analyze the nearby logs. As shown below just before burpsuite was installed, a file called 7ZG.EXE was executed, which is the potential malware.
 
-
-
+<img src="https://i.imgur.com/uJCPhzZ.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 
 
 
