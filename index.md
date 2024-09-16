@@ -234,6 +234,33 @@ We will search for each suspicious file on Timeline Explorer, and tag them. This
 
 <img src="https://i.imgur.com/mcEgt6G.png" height="65%" width="65%" alt="Suspicious Files"/>
 
+# Timeline of Suspicious Events
+
+## 1. Burpsuite Download
+- **Date**: 2024-03-12 at 18:36
+- **Details**: Bill downloaded a cracked version of Burpsuite Pro, identified as `BURPSUITE-PRO-CRACKED.EXE`.
+- **Location**: `USERS\BILL.LUMBERGH\DOWNLOADS\BURPSUITE-PRO-CRACKED.EXE`
+
+## 2. Malware Execution
+- **Date**: 2024-03-12 at 18:55
+- **Details**: File `7ZG.EXE` was executed. This is identified as potential malware and was run shortly after the Burpsuite download.
+
+## 3. Execution of Suspicious Files
+- **Date**: 2024-03-12 at 19:02
+- **Details**: File `C.EXE` was executed multiple times, with a notable run at this time.
+- **Location**: `\WINDOWS\TEMP\C.EXE`
+
+## 4. Additional Suspicious Activity
+- **Date**: 2024-03-12 at 19:26
+- **Details**: `POWERSHELL.EXE` was run, showing high activity and accessing various business files, suggesting possible exfiltration or data manipulation.
+
+## 5. Rclone Execution
+- **Date**: 2024-02-12 at 19:19
+- **Details**: `RCLONE.EXE` was executed. This tool can be used for migrating or mirroring data and accessed multiple sensitive files, including business-related documents.
+
+## 6. Analysis of Files in TEMP
+- **Date**: 2024-03-12 at various times
+- **Details**: Files like `B.EXE`, `C.EXE`, and `RCLONE.EXE` accessed and potentially manipulated files in the TEMP directory and other sensitive areas.
 
 
    
