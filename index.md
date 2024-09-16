@@ -121,13 +121,14 @@ Now, we will analyze the remaining files that we found using PECmd.exe and answe
 ```powershell
 C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe  -f C:\Cases\Prefetch\BURPSUITE-PRO-CRACKED.EXE-EF7051A8.pf
 ```
-```powershell
+
 1. How many times did this program run?
+```powershell
    Run count: 1
 Last run: 2024-03-12 18:36:11
 ```
-```powershell
 2. What is the full path to the program executable?
+```powershell
 \USERS\BILL.LUMBERGH\DOWNLOADS\BURPSUITE-PRO-CRACKED.EXE
 ```
 3. Anything interesting or noteworthy in the Files or Directories referenced?
@@ -138,12 +139,16 @@ Last run: 2024-03-12 18:36:11
 C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe  -f C:\Cases\Prefetch\B.EXE.pf
 ```
 1. How many times did this program run?
+```powershell
 - Run count: 1
 - Last run: 2024-03-12 18:55
+```
 2. What is the full path to the program executable?
-- \WINDOWS\TEMP\B.EXE
-3. User Data this program was accessing?
 ```powershell
+- \WINDOWS\TEMP\B.EXE
+```
+3. User Data this program was accessing?
+```
 WINDOWS\WEBCACHE\WEBCACHEV01.DAT
 USER DATA\DEFAULT\HISTORY
 EDGE\USER DATA\DEFAULT\HISTORY
@@ -155,10 +160,14 @@ MOZILLA\FIREFOX\PROFILES.INI
 C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe  -f C:\Cases\Prefetch\C.EXE.pf
 ```
 1. How many times did this program run?
+```powershell
 - RunCount: 9
 - Last run: 2024-03-12 19:02:37
+```
 2. What is the full path to the program executable?
+```powershell
 - \WINDOWS\TEMP\C.EXE
+```
 3. Direct Key word hits?
 ```powershell
 - \WINDOWS\TEMP\2.TXT
@@ -170,11 +179,11 @@ https://jpcertcc.github.io/ToolAnalysisResultSheet/details/RemoteLogin-WCE.htm
 ## File to Analyze - POWERSHELL.EXE.pf
 
 1. How many times did this program run?
-- Run count: 23
 ```powershell
 Run count: 23
 Last run: 2024-04-13 21:31:28
 Other run times: 2024-04-13 21:21:23, 2024-04-13 21:21:22, 2024-04-13 20:50:40, 2024-04-13 20:50:40, 2024-03-12 19:26:55, 2024-03-12 19:16:52, 2024-03-12 19:14:15
+```
 
 ```
 2. Interesting Directories Accessed?
