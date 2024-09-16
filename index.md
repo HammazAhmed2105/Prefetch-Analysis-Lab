@@ -25,3 +25,12 @@
    ```
 <img src="https://i.imgur.com/ypuSCL9.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 
+This command runs the `PECmd.exe` tool from Eric Zimmerman's suite with the following options:
+
+- `-q`: Enables quiet mode (minimal output).
+- `-d C:\Cases\Prefetch\`: Specifies the directory containing Prefetch files to analyze.
+- `--csv "C:\Cases\Analysis\ --csvf prefetch.csv"`: Exports the analysis results to a CSV file named `prefetch.csv` in the `C:\Cases\Analysis\` directory.
+
+The tool processes the Prefetch files and saves the results in a CSV format for further analysis.
+
+
