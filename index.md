@@ -202,7 +202,11 @@ WINDOWS\BACKUP\LOGS\OFFSITE BACKUP ARCHITECTURE.PDF
 
 <img src="https://i.imgur.com/10iDyE2.png" height="65%" width="65%" alt="Suspicious Files"/>
 
-
+1. How many times did this program run?
+```powershell
+- Run Count: 1
+- Last Run: 2024-02-12 19:19:48
+```
 
 
 
