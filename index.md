@@ -229,8 +229,10 @@ WINDOWS\BACKUP\RCLONE.CONF (Keyword: True)
 - I didn't checkout the prefetch analysis for sd.exe, but witha  simple google search i found a link from anyrun. Theres a possibility that sd.exe was a wiper or secure delete utility.
 - https://any.run/report/a0eef815bef0bf90fb507aa767558187573dca2c1ad692e2bf240a21300a7539/027591fc-19eb-4fac-a1df-f77dc7df0211
 
+## Creating a TimeLine 
+We will search for each suspicious file on Timeline Explorer, and tag them. This will help us in making a timeline.
 
-
+<img src="https://i.imgur.com/mcEgt6G.png" height="65%" width="65%" alt="Suspicious Files"/>
 
 
 
