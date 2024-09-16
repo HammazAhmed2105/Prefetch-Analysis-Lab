@@ -1,5 +1,8 @@
 # Prefetch Analysis of Malware Intrusion
 
+# Note - For detailed step by step analysis, read the index.md file.
+
+
 ```markdown
 # Prefetch Analysis of Malware Intrusion - Initech Software
 
