@@ -115,7 +115,22 @@ Now, we will analyze the remaining files that we found using PECmd.exe and answe
 - What is the full path to the program executable?
 - Anything interesting or noteworthy in the Files or Directories referenced?
 
-  
+
+## File to Analyze - BURPSUITE-PRO-CRACKED.7Z
+
+```POWERSHELL
+C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe  -f C:\Cases\Prefetch\BURPSUITE-PRO-CRACKED.EXE-EF7051A8.pf
+```
+-  How many times did this program run?
+-  ```powershell
+   Run count: 1
+Last run: 2024-03-12 18:36:11
+```
+- What is the full path to the program executable?
+```powershell
+\USERS\BILL.LUMBERGH\DOWNLOADS\BURPSUITE-PRO-CRACKED.EXE
+```
+
 
 
 
