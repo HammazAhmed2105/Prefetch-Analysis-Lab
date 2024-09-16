@@ -71,6 +71,10 @@ The tool processes the Prefetch files and saves the results in a CSV format for 
 
 <img src="https://i.imgur.com/xG9WuO4.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 
+- We see some interesting files here.
+- schtasks: Might be used for persistence.
+- B.EXE, C.EXE, P.EXE, unfamiliar names and residing in TEMP.
+- WHOAMI.EXE: Displays user, group and privileges information for the user who is currently logged on to the local system. Commonly used by attackers.
 
 
 
