@@ -121,18 +121,34 @@ Now, we will analyze the remaining files that we found using PECmd.exe and answe
 ```POWERSHELL
 C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe  -f C:\Cases\Prefetch\BURPSUITE-PRO-CRACKED.EXE-EF7051A8.pf
 ```
--  How many times did this program run?
+1. How many times did this program run?
 -  ```powershell
    Run count: 1
 Last run: 2024-03-12 18:36:11
 ```
-- What is the full path to the program executable?
+2. What is the full path to the program executable?
 ```powershell
 \USERS\BILL.LUMBERGH\DOWNLOADS\BURPSUITE-PRO-CRACKED.EXE
 ```
-- Anything interesting or noteworthy in the Files or Directories referenced?
-Theres no actual indicator of compromise, but we have **WININET.DLL**, this is interesting since it accesses internet sources, which can be an indicator that its trying to communicate with a Command and Control Server.
+3. Anything interesting or noteworthy in the Files or Directories referenced?
+- Theres no actual indicator of compromise, but we have **WININET.DLL**, this is interesting since it accesses internet sources, which can be an indicator that its trying to communicate with a Command and Control Server.
 
+  ## File to Analyze - B.EXE.pf
+  ```POWERSHELL
+C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe  -f C:\Cases\Prefetch\B.EXE.pf
+```
+1. How many times did this program run?
+- Run count: 1
+- Last run: 2024-03-12 18:55
+2. What is the full path to the program executable?
+- \WINDOWS\TEMP\B.EXE
+3. User Data this program was accessing?
+```powershell
+WINDOWS\WEBCACHE\WEBCACHEV01.DAT
+USER DATA\DEFAULT\HISTORY
+EDGE\USER DATA\DEFAULT\HISTORY
+MOZILLA\FIREFOX\PROFILES.INI
+```
 
 
 
