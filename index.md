@@ -154,7 +154,7 @@ MOZILLA\FIREFOX\PROFILES.INI
 ```powershell
 C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe  -f C:\Cases\Prefetch\C.EXE.pf
 ```
-1. 1. How many times did this program run?
+1. How many times did this program run?
 - RunCount: 9
 - Last run: 2024-03-12 19:02:37
 2. What is the full path to the program executable?
@@ -164,7 +164,10 @@ C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe  -f C:\Cases\Prefetch\C.EXE.pf
 - \WINDOWS\TEMP\2.TXT
 - \WINDOWS\TEMP\WCEAUX.DLL
 ```
+### Note - WCEAUX.DLL is definitely suspicious since its usually involved in pass the hash or pass the ticekt attacks. Check the below link for reference.
+https://jpcertcc.github.io/ToolAnalysisResultSheet/details/RemoteLogin-WCE.htm
 
+## File to Analyze - C.EXE.pf
 
 
 
