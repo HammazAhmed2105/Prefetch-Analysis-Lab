@@ -23,8 +23,6 @@ We have acquired key forensic artifacts from Bill’s system to better understan
 
 ## Note
 1. Our goal is to look at the malicious executables that ran, which directories they accesses, how many times they were ran, and a bit more.
-
-```markdown
 # Analysis and Steps
 
 1. **Parse Prefetch Files**
