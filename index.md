@@ -98,6 +98,10 @@ Here’s the properly structured content formatted for GitHub:
 7. Analyzing each prefetch files
    In order to confirm how burpsuite is related to 7ZG.EXE, we will try to look at the 7GZ.EXE prefetch file, and search for the word "burpsuite", to see how it is referenced.
 
+   ```powershell
+      C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -k burpsuite -f C:\Cases\Prefetch\7ZG.EXE-D9AA3A0B.pf
+   ```
+
     <img src="https://i.imgur.com/C2hJoIE.png" height="65%" width="65%" alt="Suspicious Files"/>
 
    <img src="https://i.imgur.com/JXagiSf.png" height="65%" width="65%" alt="Suspicious Files"/>
