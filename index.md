@@ -167,7 +167,13 @@ C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe  -f C:\Cases\Prefetch\C.EXE.pf
 ### Note - WCEAUX.DLL is definitely suspicious since its usually involved in pass the hash or pass the ticekt attacks. Check the below link for reference.
 https://jpcertcc.github.io/ToolAnalysisResultSheet/details/RemoteLogin-WCE.htm
 
-## File to Analyze - C.EXE.pf
+## File to Analyze - POWERSHELL.EXE.pf
+
+1. How many times did this program run?
+- Run count: 23
+Last run: 2024-04-13 21:31:28
+Other run times: 2024-04-13 21:21:23, 2024-04-13 21:21:22, 2024-04-13 20:50:40, 2024-04-13 20:50:40, 2024-03-12 19:26:55, 2024-03-12 19:16:52, 2024-03-12 19:14:15
+
 
 
 
