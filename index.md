@@ -96,7 +96,8 @@ Here’s the properly structured content formatted for GitHub:
    - **WHOAMI.EXE**: Displays user, group, and privileges information. Commonly used by attackers.
 
 
-
+7. Analyzing each prefetch files
+   In order to confirm how burpsuite is realted to 7ZG.EXE, we will try to look at the 7GZ.EXE prefetch file, and search for the word "burpsuite", to see how it is referenced.
 
 
 
