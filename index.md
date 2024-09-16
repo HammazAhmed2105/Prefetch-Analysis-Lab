@@ -150,7 +150,20 @@ EDGE\USER DATA\DEFAULT\HISTORY
 MOZILLA\FIREFOX\PROFILES.INI
 ```
 
-
+ ## File to Analyze - C.EXE.pf
+```powershell
+C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe  -f C:\Cases\Prefetch\C.EXE.pf
+```
+1. 1. How many times did this program run?
+- RunCount: 9
+- Last run: 2024-03-12 19:02:37
+2. What is the full path to the program executable?
+- \WINDOWS\TEMP\C.EXE
+3. Direct Key word hits?
+```powershell
+- \WINDOWS\TEMP\2.TXT
+- \WINDOWS\TEMP\WCEAUX.DLL
+```
 
 
 
