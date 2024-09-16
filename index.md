@@ -263,7 +263,8 @@ We will search for each suspicious file on Timeline Explorer, and tag them. This
 - **Details**: Files like `B.EXE`, `C.EXE`, and `RCLONE.EXE` accessed and potentially manipulated files in the TEMP directory and other sensitive areas.
 
 
-   
+# Summary
+A cracked version of Burpsuite Pro (`BURPSUITE-PRO-CRACKED.EXE`) was downloaded by Bill on 2024-03-12. Shortly after, potential malware (`7ZG.EXE`) was executed, followed by the repeated execution of a suspicious file (`C.EXE`) from the `\WINDOWS\TEMP\` directory. Later, high activity from `POWERSHELL.EXE` indicated potential data exfiltration or manipulation. Prior to these events, on 2024-02-12, `RCLONE.EXE` was executed, accessing sensitive business documents, suggesting data transfer activities. Files like `B.EXE`, `C.EXE`, and `RCLONE.EXE` also manipulated files in the TEMP directory, indicating widespread suspicious activity.
    
 
 
