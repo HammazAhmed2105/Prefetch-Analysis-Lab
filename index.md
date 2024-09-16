@@ -130,7 +130,8 @@ Last run: 2024-03-12 18:36:11
 ```powershell
 \USERS\BILL.LUMBERGH\DOWNLOADS\BURPSUITE-PRO-CRACKED.EXE
 ```
-
+- Anything interesting or noteworthy in the Files or Directories referenced?
+Theres no actual indicator of compromise, but we have **WININET.DLL**, this is interesting since it accesses internet sources, which can be an indicator that its trying to communicate with a Command and Control Server.
 
 
 
