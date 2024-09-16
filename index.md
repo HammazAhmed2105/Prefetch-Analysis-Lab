@@ -23,5 +23,5 @@
    ```powershell
     C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -q -d C:\Cases\Prefetch\ --csv "C:\Cases\Analysis\ --csvf prefetch.csv"
    ```
-   
+<img src="https://i.imgur.com/ypuSCL9.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 
