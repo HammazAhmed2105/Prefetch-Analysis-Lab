@@ -1,3 +1,10 @@
+# Scenario
+We are investigating an intrusion involving a workstation owned by Bill Lumbergh of the Initech Software company. Bill is currently an IT technician hoping to break into the exciting cybersecurity career field.
+
+Recently, Bill was looking for free resources for testing his skills in web app penetration testing and used Reddit to try to find a cracked version of a popular software called Burpsuite Pro. Unfortunately, an unsavory Redditor may have sent Bill some malware.
+
+We have acquired key forensic artifacts from Bill’s system to better understand what happened once he ran the malware. This lab focuses exclusively on the Prefetch files obtained from Bill’s system. You might be surprised at just how much this one artifact will reveal about this attack.
+
 # Lab Setup
 
 1. First things first, we need to set up a virtual machine to download the forensic evidence. I am using Oracle VirtualBox with a Windows 11 VM. You can also use VMware from [this link](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) and obtain a Windows 11 VM from [this link](https://www.microsoft.com/en-us/software-download/windows11).
@@ -39,5 +46,6 @@ The tool processes the Prefetch files and saves the results in a CSV format for 
 <img src="https://i.imgur.com/6eywqw1.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 
 3. Click on the RunTime column to make the timeline in either ascending or descending order. This helps us in making a proper timeline of events.
+
 4. 
 
