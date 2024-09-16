@@ -63,6 +63,11 @@ The tool processes the Prefetch files and saves the results in a CSV format for 
 
 <img src="https://i.imgur.com/uJCPhzZ.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 
+6. Now we simply scroll a bit, and see if there are any suspicious looking files, and we come across a few, as shwon below.
+
+<img src="https://i.imgur.com/GysrugE.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/akoJ51H.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 
 
 
