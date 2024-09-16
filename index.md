@@ -207,9 +207,27 @@ WINDOWS\BACKUP\LOGS\OFFSITE BACKUP ARCHITECTURE.PDF
 - Run Count: 1
 - Last Run: 2024-02-12 19:19:48
 ```
+2. What is the full path to the program executable?
+```powershell
+\WINDOWS\BACKUP\RCLONE.EXE
+```
+3. Keyword hits?
+```powershell
+WINDOWS\BACKUP\RCLONE.CONF (Keyword: True)
+\WINDOWS\BACKUP\LOGS\1.TXT (Keyword: True)
+\WINDOWS\BACKUP\LOGS\IT-SYSTEMS-DIAGRAM.PDF (Keyword: True)
+\WINDOWS\BACKUP\LOGS\2.TXT (Keyword: True)
+\WINDOWS\BACKUP\LOGS\OFFSITE BACKUP ARCHITECTURE.PDF (Keyword: True)
+\WINDOWS\BACKUP\LOGS\ACCOUNTS-EXPORT-2023-07-24.XLS (Keyword: True)
+\WINDOWS\BACKUP\LOGS\CYBER-INSURANCE-POLICY-2023.PDF (Keyword: True)
+\WINDOWS\BACKUP\LOGS\DC-BACKUPS.ZIP (Keyword: True)
+\WINDOWS\BACKUP\LOGS\LSASS.DMP (Keyword: True
+```
 
+## File to Analyze - Sd.EXE.pf
 
-
+- I didn't checkout the prefetch analysis for sd.exe, but witha  simple google search i found a link from anyrun. Theres a possibility that sd.exe was a wiper or secure delete utility.
+- https://any.run/report/a0eef815bef0bf90fb507aa767558187573dca2c1ad692e2bf240a21300a7539/027591fc-19eb-4fac-a1df-f77dc7df0211
 
 
 
