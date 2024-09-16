@@ -33,4 +33,6 @@ This command runs the `PECmd.exe` tool from Eric Zimmerman's suite with the foll
 
 The tool processes the Prefetch files and saves the results in a CSV format for further analysis.
 
+2. Open Timeline Explorer from the Desktop, and open the two newly created csv files.
+<img src="https://i.imgur.com/h99tq4s.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 
