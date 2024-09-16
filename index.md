@@ -15,4 +15,11 @@
 4. The prefetch Files can be found in **C:\Cases\Prefetch**, while the EZ tools are in **C:\DFIR_Tools\Zimmerman Tools\net6**.
 
 ## Note
-1. Our goal is to look at the malicious executables ran, which directories they accesses, how many times they were ran, and a bit more.
+1. Our goal is to look at the malicious executables that ran, which directories they accesses, how many times they were ran, and a bit more.
+
+# Analysis and Steps
+
+1. Our first step is to use PECmd.exe to parse all the prefetch files we have into a CSV, so we can transfer those logs to an Eric Zimmerman tool called Timeline Explorer.
+   ```powershell
+   
+
