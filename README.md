@@ -1,7 +1,5 @@
 # Prefetch Analysis of Malware Intrusion
 
-Here's the README in GitHub-flavored Markdown with code formatting:
-
 ```markdown
 # Prefetch Analysis of Malware Intrusion - Initech Software
 
@@ -44,4 +42,4 @@ Bill's system was compromised through the cracked Burp Suite download, leading t
 - Timeline Explorer
 ```
 
-This is formatted using GitHub Markdown syntax to ensure proper rendering on a GitHub README page.
+
