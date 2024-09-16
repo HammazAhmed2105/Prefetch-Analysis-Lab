@@ -7,8 +7,9 @@
    ```powershell
    IEX (New-Object Net.WebClient).DownloadString("https://ec-blog.s3.us-east-1.amazonaws.com/DFIR-Lab/PF_Lab/prep_lab.ps1")
    ```
-3. Once the script is finished running, we will see the below ouput. In the 2nd screenshot you can also see , we have got the prefetch files too. 
-<img src="hhttps://i.imgur.com/58LevzJ.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
+3. Once the script is finished running, we will see the below ouput. In the 2nd screenshot you can also see , we have got the prefetch files too.
+
+<img src="https://i.imgur.com/58LevzJ.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 
 <img src="https://i.imgur.com/pWspxoZ.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 4. The prefetch Files can be found in **C:\Cases\Prefetch**, while the EZ tools are in **C:\DFIR_Tools\Zimmerman Tools\net6**.
