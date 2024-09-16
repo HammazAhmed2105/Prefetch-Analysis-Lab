@@ -24,57 +24,75 @@ We have acquired key forensic artifacts from Bill’s system to better understan
 ## Note
 1. Our goal is to look at the malicious executables that ran, which directories they accesses, how many times they were ran, and a bit more.
 
+Here’s the properly structured content formatted for GitHub:
+
+```markdown
 # Analysis and Steps
 
-1. Our first step is to use PECmd.exe to parse all the prefetch files we have into a CSV, so we can transfer those logs to an Eric Zimmerman tool called Timeline Explorer.
+1. **Parse Prefetch Files**
+
+   Our first step is to use `PECmd.exe` to parse all the prefetch files we have into a CSV, so we can transfer those logs to an Eric Zimmerman tool called Timeline Explorer.
+
    ```powershell
-    C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -q -d C:\Cases\Prefetch\ --csv "C:\Cases\Analysis\ --csvf prefetch.csv"
-   ```
-<img src="https://i.imgur.com/ypuSCL9.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
-
-This command runs the `PECmd.exe` tool from Eric Zimmerman's suite with the following options:
-
-- `-q`: Enables quiet mode (minimal output).
-- `-d C:\Cases\Prefetch\`: Specifies the directory containing Prefetch files to analyze.
-- `--csv "C:\Cases\Analysis\ --csvf prefetch.csv"`: Exports the analysis results to a CSV file named `prefetch.csv` in the `C:\Cases\Analysis\` directory.
-
-The tool processes the Prefetch files and saves the results in a CSV format for further analysis.
-
-2. Open Timeline Explorer from the Desktop, and open the two newly created csv files.
-<img src="https://i.imgur.com/h99tq4s.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
-
-<img src="https://i.imgur.com/6eywqw1.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
-
-3. Click on the RunTime column to make the timeline in either ascending or descending order. This helps us in making a proper timeline of events.
-
-4. According to our Scenario, Bill downloaded Burpsuite. So lets simply search for the term in Timeline Explorer. 
-- We see only a single hit on the term burpsuite, location being
-   ```powershell
-      USERS\BILL.LUMBERGH\DOWNLOADS\BURPSUITE-PRO-CRACKED.EXE
+   C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -q -d C:\Cases\Prefetch\ --csv "C:\Cases\Analysis\ --csvf prefetch.csv"
    ```
 
-<img src="https://i.imgur.com/UbPl3l9.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
+   <img src="https://i.imgur.com/ypuSCL9.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 
-- It's evident Bill downloaded a cracked version of Burpsuite applciation on
-  ```powershell
-  2024-03-12 at 18:36🕚
-  ```
-5. Clear the search term of Burpsuite, and now lets analyze the nearby logs. As shown below just before burpsuite was installed, a file called 7ZG.EXE was executed, which is the potential malware.
+   This command runs the `PECmd.exe` tool from Eric Zimmerman's suite with the following options:
 
-<img src="https://i.imgur.com/uJCPhzZ.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
+   - `-q`: Enables quiet mode (minimal output).
+   - `-d C:\Cases\Prefetch\`: Specifies the directory containing Prefetch files to analyze.
+   - `--csv "C:\Cases\Analysis\ --csvf prefetch.csv"`: Exports the analysis results to a CSV file named `prefetch.csv` in the `C:\Cases\Analysis\` directory.
 
-6. Now we simply scroll a bit, and see if there are any suspicious looking files, and we come across a few, as shwon below.
+   The tool processes the Prefetch files and saves the results in a CSV format for further analysis.
 
-<img src="https://i.imgur.com/GysrugE.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
+2. **Open Timeline Explorer**
 
-<img src="https://i.imgur.com/akoJ51H.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
+   Open Timeline Explorer from the Desktop, and open the two newly created CSV files.
 
-<img src="https://i.imgur.com/xG9WuO4.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
+   <img src="https://i.imgur.com/h99tq4s.png" height="85%" width="85%" alt="Timeline Explorer Screenshot"/>
 
-- We see some interesting files here.
-- schtasks: Might be used for persistence.
-- B.EXE, C.EXE, P.EXE, unfamiliar names and residing in TEMP.
-- WHOAMI.EXE: Displays user, group and privileges information for the user who is currently logged on to the local system. Commonly used by attackers.
+   <img src="https://i.imgur.com/6eywqw1.png" height="85%" width="85%" alt="Timeline Explorer Screenshot"/>
+
+3. **Sort the Timeline**
+
+   Click on the `RunTime` column to sort the timeline in either ascending or descending order. This helps in creating a proper timeline of events.
+
+4. **Search for Specific Terms**
+
+   According to our scenario, Bill downloaded Burpsuite. Search for the term in Timeline Explorer.
+
+   - We find a single hit on the term `burpsuite`, located at:
+     ```powershell
+     USERS\BILL.LUMBERGH\DOWNLOADS\BURPSUITE-PRO-CRACKED.EXE
+     ```
+
+   <img src="https://i.imgur.com/UbPl3l9.png" height="85%" width="85%" alt="Burpsuite Download Location"/>
+
+   - It's evident Bill downloaded a cracked version of the Burpsuite application on:
+     ```powershell
+     2024-03-12 at 18:36🕚
+     ```
+
+5. **Analyze Nearby Logs**
+
+   Clear the search term for Burpsuite, and now analyze the nearby logs. Just before Burpsuite was installed, a file called `7ZG.EXE` was executed, which is potential malware.
+
+   <img src="https://i.imgur.com/uJCPhzZ.png" height="85%" width="85%" alt="Malware Execution"/>
+
+6. **Identify Suspicious Files**
+
+   Scroll through the logs to identify any suspicious files. We come across a few as shown below:
+
+   <img src="https://i.imgur.com/GysrugE.png" height="85%" width="85%" alt="Suspicious Files"/>
+   <img src="https://i.imgur.com/akoJ51H.png" height="85%" width="85%" alt="Suspicious Files"/>
+   <img src="https://i.imgur.com/xG9WuO4.png" height="85%" width="85%" alt="Suspicious Files"/>
+
+   - **schtasks.exe**: Might be used for persistence.
+   - **B.EXE, C.EXE, P.EXE**: Unfamiliar names and residing in TEMP.
+   - **WHOAMI.EXE**: Displays user, group, and privileges information. Commonly used by attackers.
+```
 
 
 
