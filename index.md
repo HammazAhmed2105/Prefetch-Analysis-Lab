@@ -81,6 +81,8 @@ Here’s the properly structured content formatted for GitHub:
 
    <img src="https://i.imgur.com/uJCPhzZ.png" height="85%" width="85%" alt="Malware Execution"/>
 
+#---
+
 6. **Identify Suspicious Files**
 
    Scroll through the logs to identify any suspicious files. We come across a few as shown below:
@@ -92,7 +94,7 @@ Here’s the properly structured content formatted for GitHub:
    - **schtasks.exe**: Might be used for persistence.
    - **B.EXE, C.EXE, P.EXE**: Unfamiliar names and residing in TEMP.
    - **WHOAMI.EXE**: Displays user, group, and privileges information. Commonly used by attackers.
-```
+
 
 
 
