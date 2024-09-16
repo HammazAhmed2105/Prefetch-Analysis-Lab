@@ -193,8 +193,14 @@ USERS\BILL.LUMBERGH\DESKTOP\IT DOCS\DC-BACKUPS.ZIP
 WINDOWS\BACKUP\LOGS\OFFSITE BACKUP ARCHITECTURE.PDF
 ```
 
+## File to Analyze - Rclone.EXE.pf
 
+- This is one of the most suspicious prefetch files since it can be used to migrate or mirror data.
+- As shown below it also accesses, the previously mentioned files from B.EXe, C.EXE, and some business realted pdf files.
 
+<img src="https://i.imgur.com/Ghi96bP.png" height="65%" width="65%" alt="Suspicious Files"/>
+
+<img src="https://i.imgur.com/10iDyE2.png" height="65%" width="65%" alt="Suspicious Files"/>
 
 
 
