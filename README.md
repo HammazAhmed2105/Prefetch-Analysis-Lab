@@ -4,7 +4,7 @@
 
 
 ```markdown
-# Prefetch Analysis of Malware Intrusion - Initech Software
+# Prefetch Analysis of Malware Intrusion 
 
 ## Overview
 This project investigates a suspected malware intrusion on Bill Lumbergh's workstation at Initech Software by analyzing Prefetch files. The goal is to identify malicious executables, directories accessed, and suspicious activities.
