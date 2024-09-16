@@ -106,7 +106,16 @@ Here’s the properly structured content formatted for GitHub:
 
    <img src="https://i.imgur.com/JXagiSf.png" height="65%" width="65%" alt="Suspicious Files"/>
 
-We do see a file called **BURPSUITE-PRO-CRACKED.7Z**, we can concluse that it's the same file that extracted **burpsuite-pro-cracked.exe**
+We do see a file called **BURPSUITE-PRO-CRACKED.7Z**, we can conclude that it's the same file that extracted **burpsuite-pro-cracked.exe**.
+
+8. Analyzing other suspcious files.
+
+Now, we will analyze the remaining files that we found using PECmd.exe and answer the below questions.
+- How many times did this program run?
+- What is the full path to the program executable?
+- Anything interesting or noteworthy in the Files or Directories referenced?
+
+  
 
 
 
