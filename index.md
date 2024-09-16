@@ -16,9 +16,9 @@ We have acquired key forensic artifacts from Bill’s system to better understan
    ```
 3. Once the script is finished running, we will see the below ouput. In the 2nd screenshot you can also see , we have got the prefetch files too.
 
-<img src="https://i.imgur.com/58LevzJ.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/58LevzJ.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
-<img src="https://i.imgur.com/pWspxoZ.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/pWspxoZ.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 4. The prefetch Files can be found in **C:\Cases\Prefetch**, while the EZ tools are in **C:\DFIR_Tools\Zimmerman Tools\net6**.
 
 ## Note
@@ -37,7 +37,7 @@ Here’s the properly structured content formatted for GitHub:
    C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -q -d C:\Cases\Prefetch\ --csv "C:\Cases\Analysis\ --csvf prefetch.csv"
    ```
 
-   <img src="https://i.imgur.com/ypuSCL9.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
+   <img src="https://i.imgur.com/ypuSCL9.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
    This command runs the `PECmd.exe` tool from Eric Zimmerman's suite with the following options:
 
@@ -51,9 +51,9 @@ Here’s the properly structured content formatted for GitHub:
 
    Open Timeline Explorer from the Desktop, and open the two newly created CSV files.
 
-   <img src="https://i.imgur.com/h99tq4s.png" height="85%" width="85%" alt="Timeline Explorer Screenshot"/>
+   <img src="https://i.imgur.com/h99tq4s.png" height="65%" width="65%" alt="Timeline Explorer Screenshot"/>
 
-   <img src="https://i.imgur.com/6eywqw1.png" height="85%" width="85%" alt="Timeline Explorer Screenshot"/>
+   <img src="https://i.imgur.com/6eywqw1.png" height="65%" width="65%" alt="Timeline Explorer Screenshot"/>
 
 3. **Sort the Timeline**
 
@@ -68,7 +68,7 @@ Here’s the properly structured content formatted for GitHub:
      USERS\BILL.LUMBERGH\DOWNLOADS\BURPSUITE-PRO-CRACKED.EXE
      ```
 
-   <img src="https://i.imgur.com/UbPl3l9.png" height="85%" width="85%" alt="Burpsuite Download Location"/>
+   <img src="https://i.imgur.com/UbPl3l9.png" height="65%" width="65%" alt="Burpsuite Download Location"/>
 
    - It's evident Bill downloaded a cracked version of the Burpsuite application on:
      ```powershell
@@ -79,7 +79,7 @@ Here’s the properly structured content formatted for GitHub:
 
    Clear the search term for Burpsuite, and now analyze the nearby logs. Just before Burpsuite was installed, a file called `7ZG.EXE` was executed, which is potential malware.
 
-   <img src="https://i.imgur.com/uJCPhzZ.png" height="85%" width="85%" alt="Malware Execution"/>
+   <img src="https://i.imgur.com/uJCPhzZ.png" height="65%" width="65%" alt="Malware Execution"/>
 
 #---
 
@@ -87,9 +87,9 @@ Here’s the properly structured content formatted for GitHub:
 
    Scroll through the logs to identify any suspicious files. We come across a few as shown below:
 
-   <img src="https://i.imgur.com/GysrugE.png" height="85%" width="85%" alt="Suspicious Files"/>
-   <img src="https://i.imgur.com/akoJ51H.png" height="85%" width="85%" alt="Suspicious Files"/>
-   <img src="https://i.imgur.com/xG9WuO4.png" height="85%" width="85%" alt="Suspicious Files"/>
+   <img src="https://i.imgur.com/GysrugE.png" height="65%" width="65%" alt="Suspicious Files"/>
+   <img src="https://i.imgur.com/akoJ51H.png" height="65%" width="65%" alt="Suspicious Files"/>
+   <img src="https://i.imgur.com/xG9WuO4.png" height="65%" width="65%" alt="Suspicious Files"/>
 
    - **schtasks.exe**: Might be used for persistence.
    - **B.EXE, C.EXE, P.EXE**: Unfamiliar names and residing in TEMP.
