@@ -69,7 +69,7 @@ The tool processes the Prefetch files and saves the results in a CSV format for 
 
 <img src="https://i.imgur.com/akoJ51H.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 
-
+<img src="https://i.imgur.com/xG9WuO4.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 
 
 
