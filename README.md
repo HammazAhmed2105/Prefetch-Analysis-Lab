@@ -15,6 +15,7 @@ Bill downloaded a cracked version of Burp Suite Pro, leading to potential malwar
 ## Lab Setup
 1. **Virtual Machine:** Windows 11 in VirtualBox/VMware.
 2. **Tools:** Eric Zimmerman's forensic tools.
+The below command is to b run on Powershell.
    ```powershell
    IEX (New-Object Net.WebClient).DownloadString("https://ec-blog.s3.us-east-1.amazonaws.com/DFIR-Lab/PF_Lab/prep_lab.ps1")
    ```
