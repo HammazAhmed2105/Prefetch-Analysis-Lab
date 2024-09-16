@@ -81,7 +81,6 @@ Here’s the properly structured content formatted for GitHub:
 
    <img src="https://i.imgur.com/uJCPhzZ.png" height="65%" width="65%" alt="Malware Execution"/>
 
-#---
 
 6. **Identify Suspicious Files**
 
@@ -97,8 +96,33 @@ Here’s the properly structured content formatted for GitHub:
 
 
 7. Analyzing each prefetch files
-   In order to confirm how burpsuite is realted to 7ZG.EXE, we will try to look at the 7GZ.EXE prefetch file, and search for the word "burpsuite", to see how it is referenced.
+   In order to confirm how burpsuite is related to 7ZG.EXE, we will try to look at the 7GZ.EXE prefetch file, and search for the word "burpsuite", to see how it is referenced.
 
+    <img src="https://i.imgur.com/C2hJoIE.png" height="65%" width="65%" alt="Suspicious Files"/>
+
+   <img src="https://i.imgur.com/JXagiSf.png" height="65%" width="65%" alt="Suspicious Files"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
 
 
 
