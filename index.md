@@ -47,5 +47,25 @@ The tool processes the Prefetch files and saves the results in a CSV format for 
 
 3. Click on the RunTime column to make the timeline in either ascending or descending order. This helps us in making a proper timeline of events.
 
-4. 
+4. According to our Scenario, Bill downloaded Burpsuite. So lets simply search for the term in Timeline Explorer. 
+- We see only a single hit on the term burpsuite, location being
+   ```powershell
+      USERS\BILL.LUMBERGH\DOWNLOADS\BURPSUITE-PRO-CRACKED.EXE
+   ```
+
+<img src="https://i.imgur.com/UbPl3l9.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
