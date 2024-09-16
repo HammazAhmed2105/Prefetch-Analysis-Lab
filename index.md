@@ -55,6 +55,11 @@ The tool processes the Prefetch files and saves the results in a CSV format for 
 
 <img src="https://i.imgur.com/UbPl3l9.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 
+- It's evident Bill downloaded a cracked version of Burpsuite applciation on
+  ```powershell
+  2024-03-12 at 18:36🕚
+  ```
+
 
 
 
